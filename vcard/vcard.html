@@ -1,0 +1,77 @@
+<head>
+  <title>Yukhymenko Oleksandr visit card</title>
+</head>
+
+<body>
+  <div id="w">
+  <div class="container">
+    <div class="header">
+      <h1>Yukhymenko Oleksandr</h1>
+      <h4>Junior Developer</h4>
+    </div>
+
+    <div class="nav">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#about" class="about-menu" data-toggle="tab">About myself</a></li>
+        <li><a href="#cv" class="cv-menu" data-toggle="tab">CV</a></li>
+        <li><a href="#works" class="works-menu" data-toggle="tab">My works</a></li>
+        <li><a href="#contacts" class="contacts-menu" data-toggle="tab">Contacts</a></li>
+      </ul>
+    </div>
+      <section id="about" class="visible">
+        <div class="about-output">
+        <img src='{{myPhoto}}' id="portrait"/>
+        {{#each about}}
+        <p>{{{text}}}</p>
+        {{/each}}
+        <button class="edit">Edit</button>
+        </div>
+        <form class="new-about hide">
+          <p><textarea rows="10" id="new-about-text">{{#each about}}{{text}}{{/each}}</textarea></p>
+          <p><input type="submit" value="Update"></p>
+        </form>
+
+      </section>
+
+      <section id="cv" class="hide">
+        <div class="cv-output">
+        {{#each cv}}
+        <p>{{{text}}}</p>
+        {{/each}}
+        <button class="edit">Edit</button>
+        </div>
+        <form class="new-cv hide">
+          <p><textarea rows="10" id="new-cv-text">{{#each cv}}{{text}}{{/each}}</textarea></p>
+          <p><input type="submit" value="Update"></p>
+        </form>
+      </section>
+
+      <section id="works" class="hide">
+        <div class="works-output">
+        {{#each works}}
+        <p>{{{text}}}</p>
+        {{/each}}
+        <button class="edit">Edit</button>
+        </div>
+        <form class="new-works hide">
+          <p><textarea rows="10" id="new-works-text">{{#each works}}{{text}}{{/each}}</textarea></p>
+          <p><input type="submit" value="Update"></p>
+        </form>
+      </section>
+
+      <section id="contacts" class="hide">
+        <div class="contacts-output">
+        {{#each contacts}}
+        <p>{{{text}}}</p>
+        {{/each}}
+        <button class="edit">Edit</button>
+        </div>
+        <form class="new-contacts hide">
+          <p><textarea rows="10" id="new-contacts-text">{{#each contacts}}{{text}}{{/each}}</textarea></p>
+          <p><input type="submit" value="Update"></p>
+        </form>
+      </section>
+
+    </div>
+  </div>
+</body>

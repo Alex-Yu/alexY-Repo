@@ -1,0 +1,43 @@
+/* CSS declarations go here */
+body {
+  background: #f0f0f0;
+}
+#w {
+  display: block;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px 15px 45px 15px;
+}
+.container {
+  display: block;
+  width: 100%;
+  background: #fff;
+  padding: 12px 20px 25px 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.about-output {
+  display: block;
+  margin-bottom: 10px;
+
+}
+textarea {
+  width: 100%;
+
+}
+
+#portrait {
+  display: block;
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+h1, h4 {
+  color: black;
+}
