@@ -1,0 +1,18 @@
+<template name="VenuesList">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>City</td>
+        <td>Street Address</td>
+        <td>Latitude</td>
+        <td>Longitude</td>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each venues}}
+        {{>Venue}}
+      {{/each}}
+    </tbody>
+  </table>
+</template>

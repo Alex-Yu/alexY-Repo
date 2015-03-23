@@ -1,0 +1,52 @@
+<head>
+  <title>where-venues</title>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=geometry"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Login block -->
+    <div class="login">
+      <div id="login-buttons">
+        {{> loginButtons}}
+      </div>
+    </div>
+
+    <!-- Table of saved queries with delete buttons-->
+    {{#if currentUser}}
+      {{>QueriesList}}
+    {{/if}}
+
+    <!-- Input new query block -->
+    <div class="query">
+      <form class="new-query">
+        <input type="text" name="text" class="form-control" placeholder="Type to add new query"/>
+      </form>
+    </div>
+
+    <!-- Google Map block -->
+    <div id="map_canvas"></div>
+
+
+    <div class=venues-button>
+      <!-- Button for export venues to csv-file-->
+      <span id="csv-button">
+        <button name="csv">
+          Export CSV
+        </button>
+      </span>
+      <!-- Venues title -->
+      <span id="venues-title">
+        {{>VenuesTitle}}
+      </span>
+    </div>
+
+    <!-- Table of founded venues -->
+    <div class="venues-list">
+        {{>VenuesList}}
+    </div>
+  </div>
+</body>

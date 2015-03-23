@@ -1,0 +1,11 @@
+<template name="QueriesList">
+  <div class="queries-list">
+    <table class="table table-striped">
+      <tbody>
+        {{#each queries}}
+        {{>Query}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</template>
