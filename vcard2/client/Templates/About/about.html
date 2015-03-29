@@ -1,0 +1,16 @@
+<template name="About">
+<section id="about">
+  <div class="about-output">
+  <img src="/morda.jpg" id="portrait"/>
+  {{#each about}}
+  <p>{{{text}}}</p>
+  {{/each}}
+  <button class="edit">Edit</button>
+  </div>
+  <form class="new-about hide">
+    <p><textarea rows="10" id="new-about-text">{{#each about}}{{text}}{{/each}}</textarea></p>
+    <p><input type="submit" value="Update"></p>
+  </form>
+
+</section>
+</template>

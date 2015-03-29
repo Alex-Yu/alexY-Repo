@@ -1,0 +1,14 @@
+<template name="Contacts">
+<section id="contacts">
+  <div class="contacts-output">
+  {{#each contacts}}
+  <p>{{{text}}}</p>
+  {{/each}}
+  <button class="edit">Edit</button>
+  </div>
+  <form class="new-contacts hide">
+    <p><textarea rows="10" id="new-contacts-text">{{#each contacts}}{{text}}{{/each}}</textarea></p>
+    <p><input type="submit" value="Update"></p>
+  </form>
+</section>
+</template>

@@ -1,0 +1,22 @@
+<template name="Layout">
+  <div id="w">
+  <div class="container">
+    <div class="header">
+      <h1>Yukhymenko Oleksandr</h1>
+      <h4>Junior Developer</h4>
+    </div>
+
+    <div class="nav">
+      <ul class="nav nav-tabs" id=myTab>
+        <li class="active"><a href="#about" class="about-menu" data-toggle="tab">About myself</a></li>
+        <li><a href="#cv" class="cv-menu" data-toggle="tab">CV</a></li>
+        <li><a href="#works"  class="works-menu" data-toggle="tab">My works</a></li>
+        <li><a href="#contacts"  class="contacts-menu" data-toggle="tab">Contacts</a></li>
+      </ul>
+    </div>
+
+    {{>yield}}
+
+    </div>
+  </div>
+</template>

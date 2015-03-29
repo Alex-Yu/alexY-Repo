@@ -1,0 +1,14 @@
+<template name="CV">
+  <section id="cv">
+    <div class="cv-output">
+    {{#each cv}}
+    <p>{{{text}}}</p>
+    {{/each}}
+    <button class="edit">Edit</button>
+    </div>
+    <form class="new-cv hide">
+      <p><textarea rows="10" id="new-cv-text">{{#each cv}}{{text}}{{/each}}</textarea></p>
+      <p><input type="submit" value="Update"></p>
+    </form>
+  </section>
+</template>

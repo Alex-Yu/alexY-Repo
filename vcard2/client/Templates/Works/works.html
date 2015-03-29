@@ -1,0 +1,14 @@
+<template name="Works">
+<section id="works">
+  <div class="works-output">
+  {{#each works}}
+  <p>{{{text}}}</p>
+  {{/each}}
+  <button class="edit">Edit</button>
+  </div>
+  <form class="new-works hide">
+    <p><textarea rows="10" id="new-works-text">{{#each works}}{{text}}{{/each}}</textarea></p>
+    <p><input type="submit" value="Update"></p>
+  </form>
+</section>
+</template>
