@@ -1,0 +1,6 @@
+This program emulates a work of a restaurant.
+Some features:
+- randomly generate orders
+- cook orders by cookers
+- show advertising based on the time need to cook an order and library of videos
+- shows statistics
